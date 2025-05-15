@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Frame Extractor</title>
+    <title>Accident Report Generator</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -24,8 +24,8 @@
 
     <div class="bg-white shadow-xl rounded-lg p-6 sm:p-8 lg:p-10 w-full max-w-3xl">
         <header class="mb-8 text-center">
-            <h1 class="text-3xl sm:text-4xl font-bold text-gray-800">Video Frame Extractor</h1>
-            <p class="text-gray-600 mt-2">Upload a video to extract frames at 1-second intervals and generate a report.</p>
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-800">Accident Report Generator</h1>
+            <p class="text-gray-600 mt-2">Upload a video to generate a report.</p>
         </header>
 
         <div class="mb-6 flex flex-col items-center">
@@ -86,7 +86,7 @@
                 const url = URL.createObjectURL(file);
                 videoElement.src = url;
                 videoElement.style.display = 'block';
-                fileNameDisplay.textContent = `Selected file: ${file.name}`;
+                fileNameDisplay.textContent = "Extracting Frames Information. Please wait.....";
                 
                 // Reset UI for new video
                 framesContainer.innerHTML = '';
